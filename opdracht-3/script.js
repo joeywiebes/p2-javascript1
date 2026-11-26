@@ -1,7 +1,15 @@
-function myFunction() {
-  let person = prompt("Please enter your name", "gert");
-  if (person != null) {
-    document.getElementById("BBL").innerHTML =
-    "Hello " + person + "! How are you today?";
-  }
-}
+// Vraag stellen (pop-up)
+
+
+// Antwoord opslaan in variabele
+let naam = prompt("Wat is je naam");
+
+setTimeout(function() {
+    document.getElementById("BBL").textContent = "hallo " + naam;
+}, 2000);
+
+
+
+console.log("test");
+
+alert("hallo " + naam);
